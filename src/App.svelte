@@ -8,7 +8,7 @@ import Result from './Result.svelte';
 
 <main>
   <img src={logo} alt="Svelte Logo" />
-  <h1>Hello Typescript!</h1>
+  <h1>What magic color?</h1>
 
   <CheckBoxes bind:selected={selectedColors} />
   <Result selectedColors={selectedColors} />
@@ -33,7 +33,6 @@ import Result from './Result.svelte';
 
   h1 {
     color: #ff3e00;
-    text-transform: uppercase;
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.1;
