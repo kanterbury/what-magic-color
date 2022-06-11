@@ -1,9 +1,9 @@
 <script lang="ts">
-  import logo from './assets/svelte.png'
-  import CheckBoxes from './CheckBoxes.svelte'
-import type { ManaColor } from './models/ManaColor';
-import Result from './Result.svelte';
-  let selectedColors: ManaColor[] = []
+  import logo from './assets/svelte.png';
+  import CheckBoxes from './CheckBoxes.svelte';
+  import type { ManaColor } from './models/ManaColor';
+  import Result from './Result.svelte';
+  let selectedColors: ManaColor[] = [];
 </script>
 
 <main>
@@ -11,7 +11,7 @@ import Result from './Result.svelte';
   <h1>What magic color?</h1>
 
   <CheckBoxes bind:selected={selectedColors} />
-  <Result selectedColors={selectedColors} />
+  <Result {selectedColors} />
 </main>
 
 <style>
