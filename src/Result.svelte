@@ -12,3 +12,6 @@ import type { ColorCombo } from './models/ColorCombo';
 </script>
 
 <p>MagicColor: {magicColor.name}</p>
+{#if magicColor.motif}
+<p>由来：{magicColor.motif}</p>
+{/if}
