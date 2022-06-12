@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getMagicColor } from './functions/getColorCombo';
   import { getMagicNumber } from './functions/getMagicNumber';
-import type { ColorCombo } from './models/ColorCombo';
+  import type { ColorCombo } from './models/ColorCombo';
   import type { ManaColor } from './models/ManaColor';
 
   export let selectedColors: ManaColor[];
@@ -13,5 +13,5 @@ import type { ColorCombo } from './models/ColorCombo';
 
 <p>MagicColor: {magicColor.name}</p>
 {#if magicColor.motif}
-<p>由来：{magicColor.motif}</p>
+  <p>由来：{magicColor.motif}</p>
 {/if}

@@ -18,7 +18,7 @@
       label={color.label}
       id={color.id}
       icon={color.icon}
-      --color={"#000"}
+      --color={'#000'}
       bind:selected
     />
   {/each}
