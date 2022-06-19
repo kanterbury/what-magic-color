@@ -5,13 +5,15 @@
   import type { ManaColor } from './models/ManaColor';
 
   export let selectedColors: ManaColor[];
-  let magicColor: ColorCombo;
+  let magicColor: ColorCombo | undefined;
 
   $: magicNumber = getMagicNumber(selectedColors);
   $: magicColor = getMagicColor(magicNumber);
 </script>
 
-<p>MagicColor: {magicColor.name}</p>
-{#if magicColor.motif}
-  <p>由来：{magicColor.motif}</p>
+{#if magicColor}
+  <p>MagicColor: {magicColor.name}</p>
+    {#if magicColor.motif}
+      <p>由来：{magicColor.motif}</p>
+    {/if}
 {/if}

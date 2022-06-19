@@ -1,6 +1,6 @@
 import type { ColorCombo } from "src/models/ColorCombo";
 
-export function getMagicColor(magicNumber: number): ColorCombo {
+export function getMagicColor(magicNumber: number): ColorCombo | undefined {
   if(magicNumber === 11111){
     return {
       name: "5C (Five Colors)",
@@ -214,11 +214,7 @@ export function getMagicColor(magicNumber: number): ColorCombo {
       };
     }
     default: {
-      return {
-        name: "other",
-        description: "",
-        colorSetting: "",
-      };
+      return undefined;
     }
   }
 }
