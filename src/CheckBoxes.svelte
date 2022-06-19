@@ -1,26 +1,27 @@
 <script lang="ts">
-  import Icon from '@iconify/svelte';
-  import CheckBox from './CheckBox.svelte';
+  import ManaIcon from './component/ManaIcon.svelte';
   import type { ManaColor } from './models/ManaColor';
-  const colors: { label: string; id: ManaColor; icon: string }[] = [
-    { label: '白', id: 'white', icon: 'bi:sun-fill' },
-    { label: '青', id: 'blue', icon: 'entypo:drop' },
-    { label: '黒', id: 'black', icon: 'ion:skull-sharp' },
-    { label: '赤', id: 'red', icon: 'fontisto:fire' },
-    { label: '緑', id: 'green', icon: 'bi:tree-fill' },
+  const colors: { label: string; id: ManaColor; icon: string, bgColor: string }[] = [
+    { label: '白', id: 'white', icon: 'bi:sun-fill', bgColor:"#FFFCCE" },
+    { label: '青', id: 'blue', icon: 'entypo:drop', bgColor: "#9ADEF1" },
+    { label: '黒', id: 'black', icon: 'ion:skull-sharp', bgColor: "#C7BEB7" },
+    { label: '赤', id: 'red', icon: 'fontisto:fire', bgColor: "#FCA083" },
+    { label: '緑', id: 'green', icon: 'bi:tree-fill', bgColor: "#80CDA1" },
   ];
-  export let selected: ManaColor[];
+  export let selected: ManaColor[] = [];
 </script>
 
 <div class="container">
   {#each colors as color}
-    <CheckBox
-      label={color.label}
-      id={color.id}
-      icon={color.icon}
-      --color={'#000'}
-      bind:selected
-    />
+    <label>
+      <ManaIcon
+        icon={color.icon}
+        isSelected={selected.includes(color.id)}
+        --bgColor={color.bgColor}
+      />
+      {color.label}
+      <input type="checkbox" bind:group={selected} value={color.id} />
+    </label>
   {/each}
 </div>
 
@@ -28,5 +29,8 @@
   .container {
     display: flex;
     justify-content: center;
+  }
+  label:nth-of-type(n + 2) {
+    margin-left: 16px;
   }
 </style>
