@@ -1,19 +1,19 @@
 <script lang="ts">
-  import { getMagicColor } from './functions/getColorCombo';
+  import { getColorCombo } from './functions/getColorCombo';
   import { getMagicNumber } from './functions/getMagicNumber';
   import type { ColorCombo } from './models/ColorCombo';
   import type { ManaColor } from './models/ManaColor';
 
   export let selectedColors: ManaColor[];
-  let magicColor: ColorCombo | undefined;
+  let colorCombo: ColorCombo | undefined;
 
   $: magicNumber = getMagicNumber(selectedColors);
-  $: magicColor = getMagicColor(magicNumber);
+  $: colorCombo = getColorCombo(magicNumber);
 </script>
 
-{#if magicColor}
-  <p>MagicColor: {magicColor.name}</p>
-    {#if magicColor.motif}
-      <p>由来：{magicColor.motif}</p>
+{#if colorCombo}
+  <p>ColorCombo: {colorCombo.name}</p>
+    {#if colorCombo.motif}
+      <p>由来：{colorCombo.motif}</p>
     {/if}
 {/if}

@@ -1,6 +1,6 @@
 import type { ColorCombo } from "src/models/ColorCombo";
 
-export function getMagicColor(magicNumber: number): ColorCombo | undefined {
+export function getColorCombo(magicNumber: number): ColorCombo | undefined {
   if(magicNumber === 11111){
     return {
       name: "5C (Five Colors)",
