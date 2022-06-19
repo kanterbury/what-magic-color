@@ -1,5 +1,5 @@
 <script lang="ts">
-  import logo from './assets/svelte.png';
+  import Icon from '@iconify/svelte';
   import CheckBoxes from './CheckBoxes.svelte';
   import type { ManaColor } from './models/ManaColor';
   import Result from './Result.svelte';
@@ -7,7 +7,7 @@
 </script>
 
 <main>
-  <img src={logo} alt="Svelte Logo" />
+  <Icon icon="arcticons:magic" height={128} width={128} color="#ff3e00" />
   <h1>What magic color?</h1>
 
   <CheckBoxes bind:selected={selectedColors} />
@@ -26,18 +26,12 @@
     margin: 0 auto;
   }
 
-  img {
-    height: 16rem;
-    width: 16rem;
-  }
-
   h1 {
     color: #ff3e00;
     font-size: 4rem;
     font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
     max-width: 14rem;
+    margin: 0 0 16px;
   }
 
   p {
