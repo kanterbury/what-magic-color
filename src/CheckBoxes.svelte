@@ -31,6 +31,6 @@
     justify-content: center;
   }
   label:nth-of-type(n + 2) {
-    margin-left: 16px;
+    margin-left: 32px;
   }
 </style>

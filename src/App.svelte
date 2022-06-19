@@ -11,7 +11,10 @@
   <h1>What magic color?</h1>
 
   <CheckBoxes bind:selected={selectedColors} />
-  <Result {selectedColors} />
+  <div id="result-container">
+    <Result {selectedColors} />
+  </div>
+  
 </main>
 
 <style>
@@ -38,6 +41,9 @@
     max-width: 14rem;
     margin: 1rem auto;
     line-height: 1.35;
+  }
+  #result-container {
+    margin-top: 16px;
   }
 
   @media (min-width: 480px) {
