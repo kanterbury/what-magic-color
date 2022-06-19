@@ -12,8 +12,23 @@
 </script>
 
 {#if colorCombo}
-  <p>ColorCombo: {colorCombo.name}</p>
+  <span class="name" style="--text-color:{colorCombo.nameTextColor}">{colorCombo.name}</span>
     {#if colorCombo.motif}
-      <p>由来：{colorCombo.motif}</p>
+      <p class="motif">{colorCombo.motif}</p>
     {/if}
 {/if}
+
+<style>
+  .name{
+    font-size: 48px;
+    font-weight: bold;
+    color: #FF8C00;
+    background: var(--text-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .motif {
+    font-size: 20px;
+  }
+</style>
