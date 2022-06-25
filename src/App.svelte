@@ -60,8 +60,10 @@
     line-height: 1.35;
   }
   #container {
+    max-width: 1080px;
     min-height: 100vh;
     position: relative;
+    margin: 0 auto;
   }
   #result-container {
     margin-top: 16px;
