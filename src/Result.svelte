@@ -20,7 +20,7 @@
 
 <style>
   .name{
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
     color: #FF8C00;
     background: var(--text-color);
@@ -29,6 +29,6 @@
     -webkit-text-fill-color: transparent;
   }
   .motif {
-    font-size: 20px;
+    font-size: 18px;
   }
 </style>

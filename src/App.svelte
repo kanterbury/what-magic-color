@@ -36,7 +36,7 @@
 
   main {
     text-align: center;
-    padding: 1em;
+    padding: 16px;
     margin: 0 auto;
   }
   footer {
@@ -49,15 +49,13 @@
 
   h1 {
     color: #ff3e00;
-    font-size: 4rem;
+    font-size: 32px;
     font-weight: 100;
-    max-width: 14rem;
     margin: 0 0 16px;
   }
 
   p {
-    max-width: 14rem;
-    margin: 1rem auto;
+    margin: 8px 0;
     line-height: 1.35;
   }
   #container {

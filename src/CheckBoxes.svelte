@@ -28,9 +28,10 @@
 <style>
   .container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  label:nth-of-type(n + 2) {
-    margin-left: 32px;
+  label {
+    margin: 0 4px;
   }
 </style>

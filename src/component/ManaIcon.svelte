@@ -5,7 +5,7 @@
 </script>
 
 <div class="icon-container" class:selected={isSelected}>
-  <Icon {icon} height={64} width={64} />
+  <Icon {icon} height={48} width={48} />
 </div>
 
 <style>
