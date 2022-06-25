@@ -1,8 +1,8 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
-  import CheckBoxes from './CheckBoxes.svelte';
+  import CheckBoxes from './component/CheckBoxes.svelte';
   import type { ManaColor } from './models/ManaColor';
-  import Result from './Result.svelte';
+  import Result from './component/Result.svelte';
   let selectedColors: ManaColor[] = [];
 </script>
 

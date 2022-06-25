@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { getColorCombo } from './functions/getColorCombo';
-  import { getMagicNumber } from './functions/getMagicNumber';
-  import type { ColorCombo } from './models/ColorCombo';
-  import type { ManaColor } from './models/ManaColor';
+  import { getColorCombo } from '../functions/getColorCombo';
+  import { getMagicNumber } from '../functions/getMagicNumber';
+  import type { ColorCombo } from '../models/ColorCombo';
+  import type { ManaColor } from '../models/ManaColor';
 
   export let selectedColors: ManaColor[];
   let colorCombo: ColorCombo | undefined;

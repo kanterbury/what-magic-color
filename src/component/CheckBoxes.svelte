@@ -1,6 +1,6 @@
 <script lang="ts">
-  import ManaIcon from './component/ManaIcon.svelte';
-  import type { ManaColor } from './models/ManaColor';
+  import ManaIcon from './ManaIcon.svelte';
+  import type { ManaColor } from '../models/ManaColor';
   const colors: { label: string; id: ManaColor; icon: string, bgColor: string }[] = [
     { label: '白', id: 'white', icon: 'bi:sun-fill', bgColor:"#FFFCCE" },
     { label: '青', id: 'blue', icon: 'entypo:drop', bgColor: "#9ADEF1" },
