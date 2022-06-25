@@ -10,7 +10,8 @@
 <main>
   <Icon icon="arcticons:magic" height={128} width={128} color="#ff3e00" />
   <h1>What magic color?</h1>
-
+  <p>マジック：ザ・ギャザリングでは、デッキに含まれるマナの組み合わせをその世界設定をなぞった名前で呼称します。</p>
+  <p>このアプリでは、デッキに含まれる色を選択し、組み合わせの名前を確認することができます。</p>
   <CheckBoxes bind:selected={selectedColors} />
   <div id="result-container">
     <Result {selectedColors} />
