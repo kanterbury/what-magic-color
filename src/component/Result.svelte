@@ -11,14 +11,20 @@
   $: colorCombo = getColorCombo(magicNumber);
 </script>
 
-{#if colorCombo}
+<div>
+  {#if colorCombo}
   <span class="name" style="--text-color:{colorCombo.nameTextColor}">{colorCombo.name}</span>
     {#if colorCombo.motif}
       <p class="motif">{colorCombo.motif}</p>
     {/if}
-{/if}
+  {/if}
+</div>
+
 
 <style>
+  div {
+    min-height: 300px;
+  }
   .name{
     font-size: 36px;
     font-weight: bold;
