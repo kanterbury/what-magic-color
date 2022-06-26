@@ -19,7 +19,8 @@ export function getColorCombo(magicNumber: number): ColorCombo | undefined {
     case 10000: {
       return {
         name: "白単",
-        nameTextColor: "#ffd700"
+        nameTextColor: "#ffd700",
+        motif: "白単色で構成させることに由来します。"
       };
     }
     case 11000: {
@@ -95,7 +96,8 @@ export function getColorCombo(magicNumber: number): ColorCombo | undefined {
     case 1000: {
       return {
         name: "青単",
-        nameTextColor: "#4682b4"
+        nameTextColor: "#4682b4",
+        motif: "青単色で構成させることに由来します。"
       };
     }
     case 1100: {
@@ -143,7 +145,8 @@ export function getColorCombo(magicNumber: number): ColorCombo | undefined {
     case 100: {
       return {
         name: "黒単",
-        nameTextColor: "#800080"
+        nameTextColor: "#800080",
+        motif: "黒単色で構成させることに由来します。"
       };
     }
     case 110: {
@@ -170,7 +173,8 @@ export function getColorCombo(magicNumber: number): ColorCombo | undefined {
     case 10: {
       return {
         name: "赤単",
-        nameTextColor: "#b22222"
+        nameTextColor: "#b22222",
+        motif: "赤単色で構成させることに由来します。"
       };
     }
     case 11: {
@@ -183,7 +187,8 @@ export function getColorCombo(magicNumber: number): ColorCombo | undefined {
     case 1: {
       return {
         name: "緑単",
-        nameTextColor: "#006400"
+        nameTextColor: "#006400",
+        motif: "緑単色で構成させることに由来します。"
       };
     }
     default: {
