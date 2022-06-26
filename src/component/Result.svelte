@@ -15,7 +15,7 @@
   {#if colorCombo}
   <span class="name" style="--text-color:{colorCombo.nameTextColor}">{colorCombo.name}</span>
     {#if colorCombo.motif}
-      <p class="motif">{colorCombo.motif}</p>
+      <p class="motif">{@html colorCombo.motif}</p>
     {/if}
   {/if}
 </div>
